@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>SUDOKU BATTLE</title>
+        <link rel="icon" type="image/x-icon" href="/img/icon.ico">
+
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+        <script src = "./socket.io/socket.io.js"></script>
+        <script src = "./js/lobby.io.js"></script>
+        <script type="module" src = "./js/main.js"></script>
+    </head>
+
+    <body>
+        <div id = 'topbar'>
+            <button id = 'create_lobby' class="button">Create Lobby</button>
+            <input type='text' id = 'lobby_code' placeholder = 'Lobby Code' />
+            <button id = 'join_lobby' class="button">Join Lobby</button>
+            <span id = 'lobby-code-note' class = 'text'> Your Lobby Code: <span id = 'lobby-code-view'>N/A</span></span>
+            <button class = 'right button' id = 'leave_lobby'>Leave Lobby</button>
+        </div>
+        <div id = 'container'>
+            <div id = 'chat'>
+                <div id = 'msgs-con'>
+                </div>
+            </div>
+            <div id = 'people'>
+            </div>
+        </div>
+
+
+        <button id="gen" onclick="startGame()">GEN</button>
+
+        <div id="playable" hidden> 
+            <div>
+                <h1 id="diff"></h1>
+                <h1 id="percent"></h1>
+                <h1 id="timer">00:00:00</h1>
+                <h1 id="status"></h1>
+            </div>
+
+            <div>
+                <div id="field"></div>
+
+                <div id="numbers"></div>
+                <button id="erase" onclick="erase()"><</button>
+            </div>
+
+            <div id="opponents"></div>
+        </div>
+
+        <div id="gif" hidden>
+            <h1 id="winner"></h1>
+            <div class="tenor-gif-embed" data-postid="27389776" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/apala-apala9tv-ines-ballester-music-gif-27389776">Apala Apala9tv GIF</a>from <a href="https://tenor.com/search/apala-gifs">Apala GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+    </body>
+</html>

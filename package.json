@@ -1,0 +1,25 @@
+{
+  "name": "lobby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinauroz/Joemes-s-Multiplayer-Game-Lobby.git"
+  },
+  "author": "alinauroze@hotmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alinauroz/Joemes-s-Multiplayer-Game-Lobby/issues"
+  },
+  "homepage": "https://github.com/alinauroz/Joemes-s-Multiplayer-Game-Lobby#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.0"
+  }
+}
